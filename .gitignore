@@ -71,7 +71,7 @@ typings/
 
 # next.js build output
 .next
-
+package-lock.json
 # nuxt.js build output
 .nuxt
 
