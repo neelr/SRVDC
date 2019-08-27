@@ -10,6 +10,7 @@ var styles = {
     item: {
         textDecoration: "none",
         padding: "10px",
+        paddingLeft: "20px",
         color: "#4285f4",
         display: "inline-block"
     },

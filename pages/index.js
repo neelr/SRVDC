@@ -16,15 +16,15 @@ const Index = () => {
             </Head>
             <Header />
             <Hero>
-                <Typing speed={50} loop>
+                <Typing speed={75} loop>
                     <p style={styles.heroText}>Diversity</p>
-                    <Backspace count={9} delay={1000} />
+                    <Backspace count={9} delay={2000} />
                     <Delay ms={500} />
                     <p style={styles.heroText}>Acceptance</p>
-                    <Backspace count={10} delay={1000} />
+                    <Backspace count={10} delay={2000} />
                     <Delay ms={500} />
                     <p style={styles.heroText}>Safe Zone</p>
-                    <Backspace count={9} delay={1000} />
+                    <Backspace count={9} delay={2000} />
                     <Reset delay={500} />
                 </Typing>
             </Hero>
