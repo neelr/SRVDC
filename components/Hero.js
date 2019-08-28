@@ -5,13 +5,13 @@ var style = {
         width:"100vw",
     },
     inside: {
-        padding: "100px"
+        padding: "25px"
     }
 }
 const Hero = (props) => {
     return(
         <div style={style.main}>
-            <div style={style.inside}>
+            <div className="main" style={style.inside}>
                 {props.children}
             </div>
         </div>

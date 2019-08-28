@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import {FaGithub} from "react-icons/fa";
 var styles = {
     header: {
         width: "100vw",
@@ -21,19 +21,39 @@ var styles = {
         float: "right",
         display: "inline-block",
         paddingRight: "20px"
-    },
+    },icon: {
+        display: "inline-block",
+        marginRight: "10px",
+    }
 }
 const Header = () => {
     return (
         <div style={styles.header}>
             <span>
-                <Link href="/etx"><a style={styles.item}>Home</a></Link>
-                <Link href="/etx"><a style={styles.item}>Calendar</a></Link>
-                <Link href="/etx"><a style={styles.item}>Contact Us</a></Link>
+                <Link href="/"><a className="item" style={styles.item}>Home</a></Link>
+                <Link href="/calender"><a className="item" style={styles.item}>Calendar</a></Link>
+                <Link href="/contact"><a className="item" style={styles.item}>Contact Us</a></Link>
             </span>
-            <span>
-                <a href="https://github.com/hacker719/srvdc" style={styles.itemside}>Github</a>
+            <span className="hidden-mobile">
+            <a className="item" href="https://github.com/hacker719/srvdc" style={styles.itemside}>
+                <FaGithub size={15} style={styles.icon}/>
+                <span>Github</span>
+            </a>
             </span>
+            <style>{`
+            .item:hover {
+                color:black !important;
+            }
+            .item {
+                display: flex;
+            }
+            .iconText {
+                margin-bottom:10px
+            }
+            .center {
+                margin: auto;
+            }
+            `}</style>
         </div>
     )
 }
