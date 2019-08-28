@@ -16,10 +16,10 @@ const Index = () => {
                         <p className="herotext" style={styles.heroText}>Diversity</p>
                         <Backspace count={9} delay={2000} />
                         <Delay ms={500} />
-                        <p className="herotext" style={styles.heroText}>Acceptance</p>
-                        <Backspace count={10} delay={2000} />
+                        <p className="herotext" style={styles.heroText}>Equity</p>
+                        <Backspace count={6} delay={2000} />
                         <Delay ms={500} />
-                        <p className="herotext" style={styles.heroText}>Safe Zone</p>
+                        <p className="herotext" style={styles.heroText}>Inclusion</p>
                         <Backspace count={9} delay={2000} />
                         <Reset delay={500} />
                     </Typing>
