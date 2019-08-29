@@ -18,7 +18,7 @@ const Footer = () => {
                     cursor: pointer;
                 }
                 .container {
-                    background-color: #ececec;
+                    background-color: #fafafa;;
                     height: 30vh;
                     text-align:center;
                     display: flex;

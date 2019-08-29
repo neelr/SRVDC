@@ -2,12 +2,20 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Typing, { Backspace, Delay, Reset } from 'react-typing-animation';
 
+
 var styles = {
     heroText: {
         fontSize: "2rem"
     }
 }
+
 const Index = () => {
+    var events = [ {
+        title: "Meeting",
+        start: new Date('December 17, 2019 03:30:00'),
+        end: new Date('December 17, 2019 04:30:00'),
+        href:"https://google.com"
+      }]
     return (
         <div>
             <Layout>
@@ -50,6 +58,9 @@ const Index = () => {
                         .text {
                             font-size:1rem;
                         }
+                    }
+                    .calendar {
+                        height:50vh
                     }
                 `}</style>
             </Layout>
