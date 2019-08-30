@@ -9,7 +9,7 @@ const Contact = () => {
                 <h1 className="herotext">Contact Us</h1>
                 <p className="text">Feel free to email us at ...</p>
             </Hero>
-            <style jsx global>{`
+            <style>{`
             @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
             body {
                 margin:0px;

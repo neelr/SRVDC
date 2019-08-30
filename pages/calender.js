@@ -29,7 +29,7 @@ var Calender = (props) => {
                     />
                 </div>
                 </Hero>
-                <style jsx global>{`
+                <style>{`
                     @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
                     body {
                         margin:0px;

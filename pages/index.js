@@ -33,7 +33,7 @@ const Index = () => {
                     </Typing>
                     <p className="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus aspernatur magnam sequi dignissimos ab quo voluptatem itaque fugiat repellat inventore quod consequatur qui sint exercitationem fuga, quas autem nulla porro?</p>
                 </Hero>
-                <style jsx global>{`
+                <style >{`
                     @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
                     body {
                         margin:0px;
