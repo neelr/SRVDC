@@ -10,10 +10,10 @@ const localizer = momentLocalizer(moment)
 var events = 
     [
         {
-              title: "Angel Hacks",
-              start: new Date("October 26, 2019 8:30:00"),
-              end: new Date("October 26, 2019 21:45:00"),
-              href:"angels"
+              title: "Example Event",
+              start: new Date("September 1, 2019 8:30:00"),
+              end: new Date("September 1, 2019 21:45:00"),
+              href:"ex"
         }
     ]
 
@@ -23,7 +23,7 @@ var Calender = (props) => {
             <Layout>
                 <link href="https://cdn.jsdelivr.net/npm/react-big-calendar@0.19.0/lib/css/react-big-calendar.css" rel="stylesheet"/>
                 <h1 className="herotext">Events!</h1>
-                <Event id="angels" title="Angel Hacks" desc="AngelHacks is a 12-hour hackathon. 100 students from across LA will come for the weekend. You’ll team up (or go solo, if that’s what you prefer) to build an app, game, or website. We’ll provide free meals & drinks. In the evening, judges will pick the best projects to demo for everyone and win prizes. There'll be raffles and giveaways throughout the event as well! You’ll meet people, create amazing new things, & have fun." img="https://angelhacks.org/static/logo-inverted.png"/>
+                <Event id="ex" title="Example Event" desc="Description................" img="https://media.istockphoto.com/photos/diverse-group-of-people-community-togetherness-concept-picture-id623600600?k=6&m=623600600&s=612x612&w=0&h=7ist1JFalJ0WMCLqy_-nbEfkjmpD0uP_UN7ksZzVTms="/>
                 <br/><br/>
                 <div className="calendar">
                     <Calendar
