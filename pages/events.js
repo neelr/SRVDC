@@ -45,6 +45,9 @@ var Calender = (props) => {
                         font-size:1.5rem;
                         text-indent:3em;
                     }
+                    .item {
+                        font-weight:900;
+                    }
                     @media screen and (min-width: 800px) {
                         .herotext {
                             font-size:4rem !important;
