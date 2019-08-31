@@ -33,7 +33,10 @@ var Calender = (props) => {
                     />
                 </div>
                 <style>{`
-                    @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+                    @import url('https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap');
+                    .desc {
+                        font-weight:600;
+                    }
                     body {
                         margin:0px;
                         font-family: 'Montserrat', sans-serif;

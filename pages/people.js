@@ -34,11 +34,7 @@ const People = () => {
                     }
                     @media screen and (max-width: 800px) {
                         .hidden-mobile {
-                            float:none;
-                            display: flex;
-                        }
-                        .item {
-                            padding:0px !important;
+                            display: none;
                         }
                         .text {
                             font-size:1rem;

@@ -5,7 +5,7 @@ const Event = (props)=> {
         <div id={props.id} style={{display:"flex"}}>
             <div style={{flexDirection:"column",margin:"20px"}}>
                 <h1>{props.title}</h1>
-                <p>{props.desc}</p>
+                <p className="desc">{props.desc}</p>
             </div>
             <img className="eventImage hidden-mobile" src={props.img}/>
             <style>{`

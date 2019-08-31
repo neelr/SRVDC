@@ -46,16 +46,24 @@ const Index = () => {
                     <p>Text</p>
                 </div>
             <style >{`
-                    @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+                    @import url('https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap');
+                    p {
+                        font-weight:600;
+                    }
                     .wrapper {
                         margin-bottom:50px;
                     }
+                    .herotext {
+                        font-weight:900;
+                    }
                     html,body {
+                        font-weight:900;
                         margin:0px;
                         font-family: 'Montserrat', sans-serif;
                         height: 100% !important;
                     }
-                    .text {
+                    p.text {
+                        font-weight:900;
                         font-size:1.5rem;
                         text-indent:3em;
                     }
