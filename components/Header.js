@@ -1,5 +1,4 @@
 import Link from "next/link";
-import {FaGithub} from "react-icons/fa";
 var styles = {
     header: {
         width: "100vw",
@@ -31,14 +30,11 @@ const Header = () => {
         <div style={styles.header}>
             <span>
                 <Link href="/"><a className="item" style={styles.item}>Home</a></Link>
-                <Link href="/calender"><a className="item" style={styles.item}>Calendar</a></Link>
-                <Link href="/contact"><a className="item" style={styles.item}>Contact Us</a></Link>
+                <Link href="/events"><a className="item" style={styles.item}>Events</a></Link>
+                <Link href="/people"><a className="item" style={styles.item}>People</a></Link>
             </span>
             <span className="hidden-mobile">
-            <a className="item" href="https://github.com/hacker719/srvdc" style={styles.itemside}>
-                <FaGithub size={15} style={styles.icon}/>
-                <span>Github</span>
-            </a>
+            <Link href="/contact"><a className="item" style={styles.itemside}>Contact Us</a></Link>
             </span>
             <style>{`
             .item:hover {

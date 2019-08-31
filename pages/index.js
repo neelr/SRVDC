@@ -59,9 +59,6 @@ const Index = () => {
                             font-size:1rem;
                         }
                     }
-                    .calendar {
-                        height:50vh
-                    }
                 `}</style>
             </Layout>
         </div>

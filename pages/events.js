@@ -11,7 +11,8 @@ var events =
         {
               title: "Test Event",
               start: new Date("August 28, 2019 15:00:00"),
-              end: new Date("August 28, 2019 16:00:00")
+              end: new Date("August 28, 2019 16:00:00"),
+              href:"test"
         }
     ]
 
@@ -22,10 +23,12 @@ var Calender = (props) => {
             <Layout>
                 <Hero>
                 <link href="https://cdn.jsdelivr.net/npm/react-big-calendar@0.19.0/lib/css/react-big-calendar.css" rel="stylesheet"/>
+                <h1 className="heroText">Calendar</h1>
                 <div className="calendar">
                     <Calendar
                     localizer={localizer}
                     events={events}
+                    onSelectEvent={(e)=>console.log(e)}
                     />
                 </div>
                 </Hero>

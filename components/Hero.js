@@ -9,13 +9,23 @@ var style = {
     }
 }
 const Hero = (props) => {
-    return(
-        <div style={style.main}>
-            <div className="main" style={style.inside}>
-                {props.children}
+    if (props.type == "events") {
+        return(
+            <div>
+                <div className="main" style={style.inside}>
+                    {props.children}
+                </div>
             </div>
-        </div>
-    )
+        )
+    }else {
+        return(
+            <div style={style.main}>
+                <div className="main" style={style.inside}>
+                    {props.children}
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Hero;
