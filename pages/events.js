@@ -23,7 +23,7 @@ var Calender = (props) => {
             <Layout>
                 <Hero>
                 <link href="https://cdn.jsdelivr.net/npm/react-big-calendar@0.19.0/lib/css/react-big-calendar.css" rel="stylesheet"/>
-                <h1 className="heroText">Calendar</h1>
+                <h1 className="herotext">Calendar</h1>
                 <div className="calendar">
                     <Calendar
                     localizer={localizer}
