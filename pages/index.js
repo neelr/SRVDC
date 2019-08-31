@@ -10,16 +10,16 @@ var styles = {
 }
 
 const Index = () => {
-    var events = [ {
+    var events = [{
         title: "Meeting",
         start: new Date('December 17, 2019 03:30:00'),
         end: new Date('December 17, 2019 04:30:00'),
-        href:"https://google.com"
-      }]
+        href: "https://google.com"
+    }]
     return (
-        <div>
-            <Layout>
-                <Hero>
+
+        <Layout>
+                <div className="wrapper">
                     <Typing speed={75} loop>
                         <p className="herotext" style={styles.heroText}>Diversity</p>
                         <Backspace count={9} delay={2000} />
@@ -32,12 +32,28 @@ const Index = () => {
                         <Reset delay={500} />
                     </Typing>
                     <p className="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus aspernatur magnam sequi dignissimos ab quo voluptatem itaque fugiat repellat inventore quod consequatur qui sint exercitationem fuga, quas autem nulla porro?</p>
-                </Hero>
-                <style >{`
+                </div>
+                <div className="wrapper">
+                    <h1>Subheader 1</h1>
+                    <p>Text</p>
+                </div>
+                <div className="wrapper">
+                    <h1>Subheader 2</h1>
+                    <p>Text</p>
+                </div>
+                <div className="wrapper">
+                    <h1>Subheader 3</h1>
+                    <p>Text</p>
+                </div>
+            <style >{`
                     @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
-                    body {
+                    .wrapper {
+                        margin-bottom:50px;
+                    }
+                    html,body {
                         margin:0px;
                         font-family: 'Montserrat', sans-serif;
+                        height: 100% !important;
                     }
                     .text {
                         font-size:1.5rem;
@@ -60,8 +76,7 @@ const Index = () => {
                         }
                     }
                 `}</style>
-            </Layout>
-        </div>
+        </Layout>
     )
 }
 

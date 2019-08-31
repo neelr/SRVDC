@@ -22,6 +22,8 @@ const Footer = () => {
                     height: 30vh;
                     text-align:center;
                     display: flex;
+                    bottom:0;
+                    width:100vw;
                 }
                 .center {
                     margin: auto;

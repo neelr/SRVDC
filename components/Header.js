@@ -4,7 +4,8 @@ var styles = {
         width: "100vw",
         paddingBottom: "10px",
         paddingTop: "10px",
-        margin: "0px"
+        margin: "0px",
+        display: "flex"
     },
     item: {
         textDecoration: "none",
@@ -20,9 +21,6 @@ var styles = {
         float: "right",
         display: "inline-block",
         paddingRight: "20px"
-    },icon: {
-        display: "inline-block",
-        marginRight: "10px",
     }
 }
 const Header = () => {
@@ -34,7 +32,7 @@ const Header = () => {
                 <Link href="/people"><a className="item" style={styles.item}>People</a></Link>
             </span>
             <span className="hidden-mobile">
-            <Link href="/contact"><a className="item" style={styles.itemside}>Contact Us</a></Link>
+            {/* <Link href="/contact"><a className="item" style={styles.itemside}>Contact Us</a></Link> */}
             </span>
             <style>{`
             .item:hover {

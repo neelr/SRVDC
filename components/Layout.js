@@ -1,17 +1,18 @@
 import Header from "../components/Header";
 import Head from "next/head";
-import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 const Layout = (props)=> {
     return(
-        <div>
+        <div style={{height:"100%"}}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta charSet="utf-8" />
                 <title>SRVDC</title>
             </Head>
             <Header/>
-            {props.children}
-            <Footer/>
+            <Hero>
+                {props.children}
+            </Hero>
         </div>
     )
 }

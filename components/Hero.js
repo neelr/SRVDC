@@ -1,7 +1,7 @@
-
+import Footer from "../components/Footer";
 var style = {
     main: {
-        height: "100vh",
+        height: "100%",
         width:"100vw",
     },
     inside: {
@@ -15,6 +15,7 @@ const Hero = (props) => {
                 <div className="main" style={style.inside}>
                     {props.children}
                 </div>
+                <Footer/>
             </div>
         )
     }else {
@@ -23,6 +24,7 @@ const Hero = (props) => {
                 <div className="main" style={style.inside}>
                     {props.children}
                 </div>
+                <Footer/>
             </div>
         )
     }
